@@ -12,7 +12,6 @@ String label = model.getButtonLabel();
 <meta charset="UTF-8">
 <title>Poker</title>
 <link rel="stylesheet" href="poker.css">
-<script src="poker.js"></script>
 </head>
 <body>
 	<div id="title">
@@ -26,7 +25,7 @@ String label = model.getButtonLabel();
 		<b><font size="5px"><%=model.getMessage()%></font></b>
 		<br>
 		<div id="main">
-		<form action="/Product/PokerServlet" method="POST">
+		<form action="/Poker/PokerServlet" method="POST">
 			<table>
 				<tr>
 					<td><p class="img"><img src="cards/<%=model.getHandcardAt(0)%>.png" width="100" height="150"></p></td>
@@ -50,7 +49,7 @@ String label = model.getButtonLabel();
 	<td><input type="checkbox" name="raise" value="0" class="big"></td>
 	</form>
 	<hr>
-	<a href="/Product/PokerServlet">リセット</a>
+	<a href="/Poker/PokerServlet">リセット</a>
 	<hr>
 </body>
 </html>
